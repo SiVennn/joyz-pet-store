@@ -1,0 +1,663 @@
+/* ================= 1. THEME VARIABLES ================= */
+
+/* MODE GELAP (DEEP LUXURY NAVY) */
+.dark-theme {
+  --bg-page: #0b0f19;            
+  --bg-content: #111827;         
+  --text-main: #f3f4f6;          
+  --text-muted: #9ca3af;         
+  --glass-bg: rgba(255, 255, 255, 0.03); 
+  --glass-border: rgba(255, 255, 255, 0.08); 
+  --card-shadow: rgba(0, 0, 0, 0.4);
+  
+  /* NAVBAR & FOOTER */
+  --navbar-bg: #0f172a;          
+  --separator-border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+/* MODE CERAH (SOFT ELEGANT LIGHT) */
+.light-theme {
+  --bg-page: #f8fafc;            
+  --bg-content: #ffffff;         
+  --text-main: #000000;          
+  --text-muted: #475569;         
+  --glass-bg: #ffffff;           
+  --glass-border: rgba(15, 23, 42, 0.08); 
+  --card-shadow: rgba(15, 23, 42, 0.06); 
+  
+  /* NAVBAR & FOOTER */
+  --navbar-bg: #1e293b;          
+  --separator-border: 1px solid rgba(0, 0, 0, 0.05); 
+}
+
+/* ================= 2. GLOBAL FONT & SPACING FIX ================= */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.6px; 
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.8px; 
+  margin-bottom: 12px;
+  color: var(--text-main) !important;
+}
+
+.page {
+  background-color: var(--bg-page) !important;
+  color: var(--text-main) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+.text-gradient {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  color: #ffffff !important; 
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: 0.5px;
+}
+
+/* ================= 3. BASE KARTU & EFEK INTERAKTIF (HOVER) ================= */
+.glass-card, 
+.feature-card, 
+.stats-section, 
+.about-section, 
+.detail-image-container, 
+.detail-info-container, 
+.product-card-modern,
+.step-card,
+.testimonial-card,
+.faq-card,
+.newsletter-section {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: 0 10px 25px var(--card-shadow) !important;
+  color: var(--text-main) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.4s ease, 
+              box-shadow 0.4s ease, 
+              background-color 0.4s ease !important;
+}
+
+/* Efek Hovering Kartu */
+.glass-card:hover, .feature-card:hover, .product-card-modern:hover, .step-card:hover, .testimonial-card:hover {
+  cursor: pointer;
+  transform: translateY(-8px) !important; 
+  border-color: rgba(35, 91, 255, 0.5) !important; 
+  box-shadow: 0 20px 35px rgba(35, 91, 255, 0.15) !important; 
+}
+
+.light-theme .glass-card:hover, 
+.light-theme .feature-card:hover, 
+.light-theme .product-card-modern:hover,
+.light-theme .step-card:hover,
+.light-theme .testimonial-card:hover {
+  border-color: #235BFF !important; 
+  box-shadow: 0 20px 30px rgba(35, 91, 255, 0.12) !important;
+}
+
+p, .hero-text p, .pet-description-text, .features-section p, .about-section p, .stats-section p, .reviews-count, .faq-answer {
+  color: var(--text-muted) !important;
+}
+
+/* ================= 4. NAVBAR STYLES ================= */
+.navbar-modern {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 50px;
+  background: var(--navbar-bg) !important;
+  border-bottom: var(--separator-border) !important; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background 0.3s ease, border-bottom 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-modern a {
+  color: #ffffff !important; 
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  font-weight: 500;
+}
+
+.nav-links a {
+  opacity: 0.8;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  color: #00d2ff !important; 
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ================= 5. BUTTONS STYLES ================= */
+.btn-neon {
+  background: linear-gradient(135deg, #235BFF 0%, #00d2ff 100%) !important;
+  color: white !important;
+  padding: 11px 26px;
+  border-radius: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-block; 
+  box-shadow: 0 4px 15px rgba(35, 91, 255, 0.25);
+}
+
+.btn-neon:hover {
+  box-shadow: 0 0 25px rgba(0, 210, 255, 0.45);
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+.btn-theme-toggle {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+/* ================= 6. HOME & HERO LAYOUT ================= */
+.home-container {
+  padding: 0 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70vh;
+  gap: 40px;
+  padding: 40px 0; 
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    align-items: center;
+  }
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: var(--text-main) !important;
+}
+
+.hero-text p {
+  margin-top: 0;
+  margin-bottom: 35px; 
+  line-height: 1.7;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-dragon-img {
+  max-width: 100%;
+  height: auto;
+  animation: floatingDragon 3.5s ease-in-out infinite;
+  box-shadow: 0 20px 50px rgba(35, 91, 255, 0.15);
+  border-radius: 20px;
+}
+
+@keyframes floatingDragon {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ================= 7. WHY CHOOSE US & STATS ================= */
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 80px 0 40px; 
+  color: var(--text-main) !important;
+}
+
+.grid-modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  padding: 40px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-main) !important;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px;
+  margin: 80px 0;
+  text-align: center;
+}
+
+.stats-item h3, 
+.stats-section h3,
+.stats-section h2 {
+  color: var(--text-main) !important; 
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+/* ================= TAMBAHAN ANATOMI 7: HOW IT WORKS ================= */
+.step-card {
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #235BFF;
+  opacity: 0.3;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* ================= TAMBAHAN ANATOMI 8: TESTIMONIALS ================= */
+.testimonial-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.client-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.client-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #235BFF;
+}
+
+/* ================= TAMBAHAN ANATOMI 9: FAQ ACCORDION ================= */
+.faq-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-card {
+  padding: 20px 25px;
+}
+
+.faq-question {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* ================= TAMBAHAN ANATOMI 10: NEWSLETTER CTR ================= */
+.newsletter-section {
+  padding: 60px 40px;
+  margin: 80px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 10px;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 14px 20px;
+  border-radius: 24px;
+  border: 1px solid var(--glass-border);
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-main);
+  outline: none;
+}
+
+.dark-theme .newsletter-input {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.newsletter-btn {
+  background: #235BFF;
+  color: white;
+  border: none;
+  padding: 0 25px;
+  border-radius: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.newsletter-btn:hover {
+  opacity: 0.9;
+}
+
+/* ================= 8. PRODUCT CARD IMPROVEMENTS ================= */
+.product-card-modern {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.card-image-box {
+  position: relative;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-pet-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info-box {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-main) !important;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-price {
+  font-weight: 700;
+  color: #10b981;
+  font-size: 1.2rem;
+}
+
+.card-rating {
+  color: #F59E0B;
+  font-weight: bold;
+}
+
+.btn-detail-rectangle {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, #235BFF 0%, #00d2ff 100%) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 12px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+  box-shadow: 0 4px 15px rgba(35, 91, 255, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-detail-rectangle:hover {
+  filter: brightness(1.1);
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(35, 91, 255, 0.35);
+}
+
+.rarity-badge, .rarity-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.rarity-badge.epic, .rarity-tag.epic { background: #9c27b0; color: #fff; }
+.rarity-badge.legendary, .rarity-tag.legendary { background: #ff9800; color: #000; }
+.rarity-badge.rare, .rarity-tag.rare { background: #2196f3; color: #fff; }
+.rarity-badge.uncommon, .rarity-tag.uncommon { background: #4caf50; color: #fff; }
+
+/* ================= 9. DETAIL PRODUCT PAGE ================= */
+.detail-wrapper {
+  position: relative;
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.back-arrow-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: var(--glass-bg);
+  color: var(--text-main) !important;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--glass-border);
+}
+
+.back-arrow-btn:hover {
+  background: #235BFF;
+  color: white !important;
+  box-shadow: 0 0 15px rgba(35, 91, 255, 0.5);
+  transform: translateX(-3px);
+}
+
+.detail-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 30px;
+  align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .detail-layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail-image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 350px;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+.detail-pet-image {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.detail-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 35px;
+}
+
+.pet-detail-title {
+  font-size: 2.2rem;
+  margin: 0 0 10px 0;
+  text-align: left;
+  color: var(--text-main) !important;
+}
+
+.rating-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.detail-price-tag {
+  color: #00c853;
+  font-size: 1.8rem;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.divider-line {
+  height: 1px;
+  background: var(--glass-border);
+  margin: 20px 0;
+}
+
+.secure-note {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.detail-action-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.btn-buy-now-green {
+  background: linear-gradient(135deg, #00c853 0%, #b2ff59 100%);
+  color: #000 !important;
+  font-weight: 700;
+  padding: 14px 40px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 200, 83, 0.3);
+}
+
+.btn-buy-now-green:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 200, 83, 0.6);
+}
+
+/* ================= 11. FOOTER STYLES ================= */
+.footer-modern {
+  background: var(--navbar-bg) !important; 
+  padding: 40px;
+  text-align: center;
+  border-top: var(--separator-border) !important; 
+  margin-top: 60px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+  color: #ffffff !important;
+}
+
+.footer-modern a, .footer-modern p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
