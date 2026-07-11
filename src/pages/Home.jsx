@@ -76,7 +76,7 @@ export default function Home() {
 
       {/* ================= ANATOMI 7: HOW IT WORKS ================= */}
       <section className="how-it-works-section">
-        <h2 className="text-gradient section-title">Cara Mudah Mendapatkan Voxel Pet</h2>
+        <h2 className="text-gradient section-title">Cara Mudah Transaksi Pet</h2>
         <div className="grid-modern">
           <div className="step-card">
             <span className="step-number">01</span>
@@ -100,7 +100,7 @@ export default function Home() {
 
       {/* ================= ANATOMI 8: TESTIMONIALS ================= */}
       <section className="testimonials-section">
-        <h2 className="text-gradient section-title">Ulasan Pengembang Game</h2>
+        <h2 className="text-gradient section-title">Ulasan Para Pemain & Kolektor Pet</h2>
         <div className="grid-modern">
           <div className="testimonial-card">
             <p>"Aset Voxel dari Joyz sangat rapi dan mudah di-import ke Unity. Sangat menghemat waktu pengerjaan game project saya!"</p>
@@ -128,7 +128,7 @@ export default function Home() {
 
       {/* ================= ANATOMI 9: FAQ ACCORDION ================= */}
       <section className="faq-section">
-        <h2 className="text-gradient section-title">Pertanyaan yang Sering Diajukan</h2>
+        <h2 className="text-gradient section-title">Pertanyaan yang Sering Diajukan (FAQ)</h2>
         <div className="faq-grid">
           <div className="faq-card">
             <h3 className="faq-question">Apakah saya mendapatkan file mentah 3D?</h3>
@@ -144,7 +144,7 @@ export default function Home() {
 
       {/* ================= ANATOMI 10: NEWSLETTER ================= */}
       <section className="newsletter-section">
-        <h2 className="text-gradient" style={{ fontSize: "1.8rem", margin: 0 }}>Dapatkan Update Aset Gratis Setiap Minggu!</h2>
+        <h2 className="text-gradient" style={{ fontSize: "1.8rem", margin: 0 }}>Dapatkan Info Restock & Giveaway Pet Mingguan!</h2>
         <p>Daftarkan email Anda untuk menerima notifikasi rilis karakter voxel terbaru dan diskon spesial.</p>
         <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
           <input type="email" placeholder="Masukkan alamat email Anda" className="newsletter-input" required />
