@@ -80,20 +80,20 @@ export default function Home() {
         <div className="grid-modern">
           <div className="step-card">
             <span className="step-number">01</span>
-            <h3>Pilih Karakter</h3>
-            <p>Jelajahi katalog dan pilih aset 3D Voxel Pet yang paling cocok untuk game atau koleksimu.</p>
+            <h3>Pilih Pet & Hubungi Admin</h3>
+            <p>Jelajahi katalog dan pilih pet yang ingin dibeli. Setelah itu, Anda akan langsung diarahkan ke admin kami.</p>
           </div>
 
           <div className="step-card">
             <span className="step-number">02</span>
-            <h3>Lakukan Pembayaran</h3>
-            <p>Klik beli sekarang dan selesaikan transaksi secara aman melalui WhatsApp atau gerbang pembayaran.</p>
+            <h3>Masuk Private Room</h3>
+            <p>Admin akan membuatkan server khusus (private room) di dalam game agar proses transaksi Anda jauh lebih aman dan terjamin.</p>
           </div>
 
           <div className="step-card">
             <span className="step-number">03</span>
-            <h3>Unduh Aset</h3>
-            <p>Setelah pembayaran terkonfirmasi, file mentah 3D (.obj/.vox) akan langsung dikirim ke email Anda.</p>
+            <h3>Klaim Kepemilikan Pet</h3>
+            <p>Setelah transaksi berhasil, admin akan mengirimkan link khusus. Cukup akses link tersebut dan pet otomatis menjadi milik Anda!</p>
           </div>
         </div>
       </section>
