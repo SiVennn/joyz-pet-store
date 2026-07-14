@@ -8,8 +8,7 @@ export default function Home() {
         <div className="hero-text">
           <h1 className="text-gradient">Discover Premium Voxel Pets</h1>
           <p>
-            Tingkatkan petualanganmu dengan aset pet 3D Voxel eksklusif. 
-            Pengiriman instan, transaksi aman, dan kualitas terbaik!
+            Tingkatkan petualangan in-game kamu dengan koleksi Pet eksklusif. Transaksi super aman via Private Room dan pengiriman instan melalui sistem Link Klaim otomatis!
           </p>
           <Link to="/products" className="btn-neon">Explore Pets</Link>
         </div>
@@ -98,45 +97,47 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ================= ANATOMI 8: TESTIMONIALS ================= */}
       <section className="testimonials-section">
         <h2 className="text-gradient section-title">Ulasan Para Pemain & Kolektor Pet</h2>
-        <div className="grid-modern">
-          <div className="testimonial-card">
-            <p>"Aset Voxel dari Joyz sangat rapi dan mudah di-import ke Unity. Sangat menghemat waktu pengerjaan game project saya!"</p>
-            <div className="client-profile">
-              <div className="client-avatar"></div>
-              <div>
-                <h4 style={{ margin: 0 }}>Alex Supriadi</h4>
-                <span style={{ fontSize: '0.8rem', opacity: 0.7 }}>Indie Game Developer</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="testimonial-card">
-            <p>"Desain naganya sangat ikonik! Harganya sangat ramah untuk kantong developer lokal namun kualitasnya bersaing secara global."</p>
-            <div className="client-profile">
-              <div className="client-avatar"></div>
-              <div>
-                <h4 style={{ margin: 0 }}>Rian Pratama</h4>
-                <span style={{ fontSize: '0.8rem', opacity: 0.7 }}>3D Animator</span>
-              </div>
+{/* ================= ANATOMI 8: TESTIMONIALS ================= */}
+      <div className="grid-modern">
+        <div className="testimonial-card">
+          <p>"Transaksinya aman banget! Adminnya responsif, dibuatin private room khusus di dalam game, dan pet langsung masuk inventory setelah klik link."</p>
+          <div className="client-profile">
+            <div className="client-avatar"></div>
+            <div>
+              <h4 style={{ margin: 0 }}>Alex Supriadi</h4>
+              {/* JABATAN SUDAH DIUBAH MENJADI PET COLLECTOR */}
+              <span style={{ fontSize: '0.8rem', opacity: 0.7 }}>Pet Collector / Gamer</span>
             </div>
           </div>
         </div>
-      </section>
 
+        <div className="testimonial-card">
+          <p>"Prosesnya cepat dan anti ribet! Habis bayar, langsung dikasih link sama admin, dan otomatis klaim pet naganya. Recommended toko ini!"</p>
+          <div className="client-profile">
+            <div className="client-avatar"></div>
+            <div>
+              <h4 style={{ margin: 0 }}>Rian Pratama</h4>
+              {/* JABATAN SUDAH DIUBAH MENJADI ACTIVE PLAYER */}
+              <span style={{ fontSize: '0.8rem', opacity: 0.7 }}>Active Player / Gamer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
       {/* ================= ANATOMI 9: FAQ ACCORDION ================= */}
       <section className="faq-section">
         <h2 className="text-gradient section-title">Pertanyaan yang Sering Diajukan (FAQ)</h2>
         <div className="faq-grid">
           <div className="faq-card">
-            <h3 className="faq-question">Apakah saya mendapatkan file mentah 3D?</h3>
-            <p className="faq-answer">Ya, setiap pembelian sudah termasuk file format .VOX (MagicaVoxel) dan .OBJ/.FBX yang siap dimasukkan ke dalam game engine.</p>
+            <h3 className="faq-question">Bagaimana cara saya menerima pet setelah transaksi?</h3>
+            <p className="faq-answer">Setelah pembayaran, admin akan mengundang Anda ke Private Room di dalam game. Selanjutnya, admin akan memberikan sebuah Link. Cukup akses link tersebut, dan pet akan otomatis menjadi milik Anda di dalam inventory.</p>
           </div>
 
           <div className="faq-card">
-            <h3 className="faq-question">Apakah aset ini boleh digunakan untuk game komersial?</h3>
+            <h3 className="faq-question">Apakah transaksi menggunakan Private Room ini aman?</h3>
             <p className="faq-answer">Tentu saja. Semua produk yang dibeli di Joyz Pet Store dilengkapi dengan lisensi komersial penuh.</p>
           </div>
         </div>
