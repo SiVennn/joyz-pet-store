@@ -102,7 +102,7 @@ export default function Home() {
 {/* ================= ANATOMI 8: TESTIMONIALS ================= */}
       <div className="grid-modern">
         <div className="testimonial-card">
-          <p>"Transaksinya aman banget! Adminnya responsif, dibuatin private room khusus di dalam game, dan pet langsung masuk inventory setelah klik link."</p>
+          <p>"Transaksinya aman banget! Adminnya responsif, dikasih link untuk masuk ke private room khusus di dalam game, lalu pet langsung dikirim via gift oleh admin. Prosesnya mulus!"</p>
           <div className="client-profile">
             <div className="client-avatar"></div>
             <div>
@@ -114,7 +114,7 @@ export default function Home() {
         </div>
 
         <div className="testimonial-card">
-          <p>"Prosesnya cepat dan anti ribet! Habis bayar, langsung dikasih link sama admin, dan otomatis klaim pet naganya. Recommended toko ini!"</p>
+          <p>"Prosesnya cepat dan anti ribet! Habis bayar, langsung dikasih link private room sama admin. Tinggal masuk ke gamenya, dan pet naganya langsung di-gift. Recommended toko ini!"</p>
           <div className="client-profile">
             <div className="client-avatar"></div>
             <div>
@@ -133,12 +133,12 @@ export default function Home() {
         <div className="faq-grid">
           <div className="faq-card">
             <h3 className="faq-question">Bagaimana cara saya menerima pet setelah transaksi?</h3>
-            <p className="faq-answer">Setelah pembayaran, admin akan mengundang Anda ke Private Room di dalam game. Selanjutnya, admin akan memberikan sebuah Link. Cukup akses link tersebut, dan pet akan otomatis menjadi milik Anda di dalam inventory.</p>
+            <p className="faq-answer">Setelah pembayaran berhasil, admin akan memberikan sebuah Link. Akses link tersebut untuk bergabung ke dalam Private Room khusus di dalam game. Setelah Anda berada di dalam room, admin akan langsung mengirimkan pet tersebut ke akun Anda melalui fitur Gift!</p>
           </div>
 
           <div className="faq-card">
             <h3 className="faq-question">Apakah transaksi menggunakan Private Room ini aman?</h3>
-            <p className="faq-answer">Tentu saja. Semua produk yang dibeli di Joyz Pet Store dilengkapi dengan lisensi komersial penuh.</p>
+            <p className="faq-answer">Tentu saja. Transaksi di dalam Private Room memastikan proses pengiriman via Gift berjalan lancar, aman, dan tanpa gangguan dari pemain lain.</p>
           </div>
         </div>
       </section>
