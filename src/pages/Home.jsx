@@ -92,7 +92,7 @@ export default function Home() {
           <div className="step-card">
             <span className="step-number">03</span>
             <h3>Klaim Kepemilikan Pet</h3>
-            <p>Setelah transaksi berhasil, admin akan mengirimkan link khusus. Cukup akses link tersebut dan pet otomatis menjadi milik Anda!</p>
+            <p>Setelah pembayaran terkonfirmasi, admin akan menghubungi Anda untuk proses pengiriman pet secara langsung melalui sistem Gift di dalam game. Transaksi 100% aman, cepat, dan anti ribet!</p>
           </div>
         </div>
       </section>
