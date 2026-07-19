@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { pets } from "../data/pets";
+import { pets } from "../../data/pets";
 
 export default function ProductDetail() {
   const { id } = useParams();
